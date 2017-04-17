@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GreenDao_demo</string>
+    <string name="btn_add_data">添加数据</string>
+</resources>

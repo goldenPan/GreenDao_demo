@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eleolive.greendao_demo.MainActivity">
+
+    <Button
+        android:id="@+id/button_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/btn_add_data"/>
+
+    <Button
+        android:id="@+id/button_add_mulit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="添加多条记录"
+        android:layout_below="@+id/button_add_data"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/btn_update_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="更新数据"
+        android:layout_below="@+id/button_add_mulit_data"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:inputType="textPersonName"
+        android:text="1013"
+        android:layout_below="@+id/btn_update_data"
+        android:layout_alignStart="@+id/btn_update_data"/>
+
+    <Button
+        android:id="@+id/btn_del_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除指定ID数据"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="查询记录"
+        android:layout_below="@+id/btn_del_data"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/btn_query"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:hint="query data"/>
+</RelativeLayout>
